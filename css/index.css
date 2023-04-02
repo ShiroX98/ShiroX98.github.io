@@ -1,0 +1,215 @@
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Body */
+body {
+  padding: 0px 10px;
+}
+
+/* CSS Title */
+
+/* header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
+  background: white;
+  min-height: 200px;
+} */
+
+.title {
+  margin: 20px;
+  text-align: center;
+}
+
+.subtitle {
+  width: 100%;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+/* CSS Header */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu>a {
+  text-decoration: none;
+}
+
+.menu-triangle {
+  text-decoration: none;
+  background-color: cornflowerblue;
+  color: white;
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.menu-parallelogram {
+  text-decoration: none;
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* CSS Main Content */
+/* main {
+  padding-top: 200px;
+  position: relative;
+} */
+
+
+.card {
+  border: 1px cornflowerblue solid;
+  box-shadow: 0px 14px 5px -7px rgba(0, 0, 0, 0.3);
+
+}
+
+.card-header {
+  text-decoration: none;
+  background-color: cornflowerblue;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body>img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  margin-top: 10px;
+}
+
+.card-form {
+  padding: 15px;
+}
+
+.card-form>h1 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.count {
+  margin-top: 10px;
+}
+
+.button-count {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 8px;
+  align-items: center;
+}
+
+.button-count>input {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.button-reset {
+  display: flex;
+  flex-direction: column;
+  padding: 6px 8px;
+  align-items: end;
+}
+
+.button-reset>input {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+#triangle {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+
+.triangle-area-formula {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.triangle-perimeter-formula {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+.form-triangle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-triangle>input {
+  padding: 8px 4px;
+  border-radius: 6px;
+  width: 100%;
+  border-color: grey;
+}
+
+#parallelogram {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.parallelogram-area-formula {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.parallelogram-perimeter-formula {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+
+.form-parallelogram {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-parallelogram>input {
+  padding: 8px 4px;
+  border-radius: 6px;
+  width: 100%;
+  border-color: grey;
+}

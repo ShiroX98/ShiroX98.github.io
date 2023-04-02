@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RevoU Mini Coding Project</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      
+      <h1 class="title" id="title">Welcome to Katik</h1>
+      <p class="subtitle">Hai Sobat, Selamat datang di Katik :] <br> Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+      <nav>
+        <div class="menu">
+          <a href="#triangle" class="menu-triangle">
+            Segitiga
+          </a>
+          <a href="#parallelogram" class="menu-parallelogram">
+            Jajar Genjang
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- /Header -->
+  <!-- Content -->
+  <main>
+    <section id="triangle">
+      <div class="card">
+        <div class="card-header">
+          <h2 >
+            Luas Segitiga
+          </h2>
+        </div>
+        <div class="card-body">
+          <img src="assets/triangle.JPG" alt="triangle-picture">
+          <div>
+            <p>Rumus Luas Segitiga yaitu : </p>
+            <h4 class="triangle-area-formula">L = 1/2 x T x A</h4>
+            <p>Di mana :</p>
+            <p>L = Luas</p>
+            <p>a = Panjang Alas</p>
+            <p>t = Tinggi</p>
+            <br>
+          </div>
+        </div>
+        <hr>
+        <div class="card-form">
+          <h1>Hitung Luas Segitiga</h1>
+          <div class="form-triangle">
+            <input type="number" name="triangular-base-value" id="triangular-base-value" placeholder="Nilai Alas">
+            <input type="number" name="triangular-height" id="triangular-height" placeholder="Nilai Tinggi">
+          </div>
+          <div class="count">
+            <p id="show-triangle-area-formula"></p>
+            <p id="show-triangle-area-count"></p>
+            <p id="show-triangle-area-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculateAreaTriangle()">
+          </div>
+          <div class="button-reset">
+            <input type="button" value="Reset" onclick="resetFormAreaTriangle()">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2 >
+            Keliling Segitiga
+          </h2>
+        </div>
+        <div class="card-body">
+          <img src="assets/triangle.JPG" alt="triangle-picture">
+          <div>
+            <p>Rumus Keliling Segitiga yaitu : </p>
+            <h4 class="triangle-perimeter-formula">K = SA + SB + SC</h4>
+            <p>Di mana :</p>
+            <p>K = Keliling</p>
+            <p>SA = Sisi A</p>
+            <p>SB = Sisi B</p>
+            <p>SC = Sisi C</p>
+          </div>
+        </div>
+        <hr>
+        <div class="card-form">
+          <h1>Hitung Keliling Segitiga</h1>
+          <div class="form-triangle">
+            <input type="number" name="side-a-triangle" id="side-a-triangle" placeholder="Nilai Sisi A">
+            <input type="number" name="side-b-triangle" id="side-b-triangle" placeholder="Nilai Sisi B">
+            <input type="number" name="side-c-triangle" id="side-c-triangle" placeholder="Nilai Sisi C">
+          </div>
+          <div class="count">
+            <p id="show-triangle-perimeter-formula"></p>
+            <p id="show-triangle-perimeter-count"></p>
+            <p id="show-triangle-perimeter-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculatePerimeterTriangle()">
+          </div>
+          <div class="button-reset">
+            <input type="button" value="Reset" onclick="resetFormPerimeterTriangle()">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="parallelogram">
+      <div class="card">
+        <div class="card-header">
+          <h2 >
+            Luas Jajar Genjang
+          </h2>
+        </div>
+        <div class="card-body">
+          <img src="assets/parallelogram.png" alt="parallelogram-picture">
+          <div>
+            <p>Rumus Luas Jajar Genjang yaitu : </p>
+            <h4 class="parallelogram-area-formula">L = a x t</h4>
+            <p>Di mana :</p>
+            <p>L = Luas</p>
+            <p>a = Panjang Alas</p>
+            <p>t = Tinggi</p>
+          </div>
+        </div>
+        <hr>
+        <div class="card-form">
+          <h1>Hitung Luas Jajar Genjang</h1>
+          <div class="form-parallelogram">
+            <input type="number" name="parallelogram-base-value" id="parallelogram-base-value" placeholder="Nilai Alas">
+            <input type="number" name="parallelogram-height" id="parallelogram-height" placeholder="Nilai Tinggi">
+          </div>
+          <div class="count">
+            <p id="show-parallelogram-area-formula"></p>
+            <p id="show-parallelogram-area-count"></p>
+            <p id="show-parallelogram-area-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculateAreaParallelogram()">
+          </div>
+          <div class="button-reset">
+            <input type="button" value="Reset" onclick="resetFormAreaParallelogram()">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h2 >
+            Keliling Jajar Genjang
+          </h2>
+        </div>
+        <div class="card-body">
+          <img src="assets/parallelogram.png" alt="parallelogram-picture">
+          <div>
+            <p>Rumus Keliling Jajar Genjang yaitu : </p>
+            <h4 class="parallelogram-perimeter-formula">K = 2 x (a + b) </h4>
+            <p>Di mana :</p>
+            <p>K = Keliling</p>
+            <p>a = Sisi A</p>
+            <p>b = Sisi B</p>
+          </div>
+        </div>
+        <hr>
+        <div class="card-form">
+          <h1>Hitung Keliling Jajar Genjang</h1>
+          <div class="form-parallelogram">
+            <input type="number" name="side-a-parallelogram" id="side-a-parallelogram" placeholder="Nilai Sisi A">
+            <input type="number" name="side-b-parallelogram" id="side-b-parallelogram" placeholder="Nilai Sisi B">
+          </div>
+          <div class="count">
+            <p id="show-parallelogram-perimeter-formula"></p>
+            <p id="show-parallelogram-perimeter-count"></p>
+            <p id="show-parallelogram-perimeter-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculatePerimeterParallelogram()">
+          </div>
+          <div class="button-reset">
+            <input type="button" value="Reset" onclick="resetFormPerimeterParallelogram()">
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- /Content -->
+  <!-- Footer -->
+  <footer>
+    <a href="#title">Kembali ke atas</a>
+  </footer>
+</body>
+</html>
