@@ -31,11 +31,20 @@ function calculatePerimeterTriangle() {
 	const sideB = parseFloat(document.getElementById('side-b-triangle').value);
 	const sideC = parseFloat(document.getElementById('side-c-triangle').value);
 
-	const result = sideA + sideB + sideC;
+	if (
+		document.getElementById('side-a-triangle').value != '' &&
+		document.getElementById('side-b-triangle').value != '' &&
+		document.getElementById('side-c-triangle').value != ''
+	) {
+		const result = sideA + sideB + sideC;
 
-	document.getElementById('show-triangle-perimeter-formula').textContent = 'K = SA + SB + SC';
-	document.getElementById('show-triangle-perimeter-count').textContent = 'K = ' + sideA + ' + ' + sideB + ' + ' + sideC;
-	document.getElementById('show-triangle-perimeter-result').textContent = 'K = ' + result;
+		document.getElementById('show-triangle-perimeter-formula').textContent = 'K = SA + SB + SC';
+		document.getElementById('show-triangle-perimeter-count').textContent =
+			'K = ' + sideA + ' + ' + sideB + ' + ' + sideC;
+		document.getElementById('show-triangle-perimeter-result').textContent = 'K = ' + result;
+	} else {
+		alert('Nilai Sisi A, B, dan C Segitiga harus di isi!');
+	}
 }
 
 function resetFormPerimeterTriangle() {
@@ -52,11 +61,18 @@ function calculateAreaParallelogram() {
 	const pedestal = parseFloat(document.getElementById('parallelogram-base-value').value);
 	const height = parseFloat(document.getElementById('parallelogram-height').value);
 
-	const result = pedestal * height;
+	if (
+		document.getElementById('parallelogram-base-value').value != '' &&
+		document.getElementById('parallelogram-height').value != ''
+	) {
+		const result = pedestal * height;
 
-	document.getElementById('show-parallelogram-area-formula').textContent = 'L = a x t';
-	document.getElementById('show-parallelogram-area-count').textContent = 'L = ' + pedestal + ' x ' + height;
-	document.getElementById('show-parallelogram-area-result').textContent = 'L = ' + result;
+		document.getElementById('show-parallelogram-area-formula').textContent = 'L = a x t';
+		document.getElementById('show-parallelogram-area-count').textContent = 'L = ' + pedestal + ' x ' + height;
+		document.getElementById('show-parallelogram-area-result').textContent = 'L = ' + result;
+	} else {
+		alert('Nilai Alas dan Tinggi Jajar Genjang harus di isi!');
+	}
 }
 
 function resetFormAreaParallelogram() {
@@ -72,11 +88,19 @@ function calculatePerimeterParallelogram() {
 	const sideA = parseFloat(document.getElementById('side-a-parallelogram').value);
 	const sideB = parseFloat(document.getElementById('side-b-parallelogram').value);
 
-	const result = 2 * (sideA + sideB);
+	if (
+		document.getElementById('parallelogram-base-value').value != '' &&
+		document.getElementById('parallelogram-height').value != ''
+	) {
+		const result = 2 * (sideA + sideB);
 
-	document.getElementById('show-parallelogram-perimeter-formula').textContent = 'K = 2 x (a+b)';
-	document.getElementById('show-parallelogram-perimeter-count').textContent = 'K = 2 x (' + sideA + ' + ' + sideB + ')';
-	document.getElementById('show-parallelogram-perimeter-result').textContent = 'K = ' + result;
+		document.getElementById('show-parallelogram-perimeter-formula').textContent = 'K = 2 x (a+b)';
+		document.getElementById('show-parallelogram-perimeter-count').textContent =
+			'K = 2 x (' + sideA + ' + ' + sideB + ')';
+		document.getElementById('show-parallelogram-perimeter-result').textContent = 'K = ' + result;
+	} else {
+		alert('Nilai Sisi A dan B Jajar Genjang harus di isi!');
+	}
 }
 
 function resetFormPerimeterParallelogram() {
