@@ -52,17 +52,18 @@
         <hr>
         <div class="card-form">
           <h1>Hitung Luas Segitiga</h1>
-          <form onsubmit="calculateAreaTriangle(event)" class="form-triangle" id="form-area-triangle">
-
-            <input type="number" name="triangular-base-value" id="triangular-base-value" placeholder="Nilai Alas" pattern="[0-9]+" required>
-            <input type="number" name="triangular-height" id="triangular-height" placeholder="Nilai Tinggi" pattern="[0-9]+" required>
-            <div class="count">
-              <p id="show-triangle-area-formula"></p>
-              <p id="show-triangle-area-count"></p>
-              <p id="show-triangle-area-result"></p>
-            </div>
-            <button type="submit" class="button-count">Hitung</button>
-          </form>
+          <div class="form-triangle">
+            <input type="number" name="triangular-base-value" id="triangular-base-value" placeholder="Nilai Alas">
+            <input type="number" name="triangular-height" id="triangular-height" placeholder="Nilai Tinggi">
+          </div>
+          <div class="count">
+            <p id="show-triangle-area-formula"></p>
+            <p id="show-triangle-area-count"></p>
+            <p id="show-triangle-area-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculateAreaTriangle()">
+          </div>
           <div class="button-reset">
             <input type="button" value="Reset" onclick="resetFormAreaTriangle()">
           </div>
@@ -89,20 +90,23 @@
         <hr>
         <div class="card-form">
           <h1>Hitung Keliling Segitiga</h1>
-          <form onsubmit="calculatePerimeterTriangle(event)" class="form-triangle" id="form-perimeter-triangle">
-            <input type="number" name="side-a-triangle" id="side-a-triangle" placeholder="Nilai Sisi A" pattern="[0-9]+" required>
-            <input type="number" name="side-b-triangle" id="side-b-triangle" placeholder="Nilai Sisi B" pattern="[0-9]+" required>
-            <input type="number" name="side-c-triangle" id="side-c-triangle" placeholder="Nilai Sisi C" pattern="[0-9]+" required>
-            <div class="count">
-              <p id="show-triangle-perimeter-formula"></p>
-              <p id="show-triangle-perimeter-count"></p>
-              <p id="show-triangle-perimeter-result"></p>
-            </div>
-            <button type="submit" class="button-count">Hitung</button>
-          </form>
+          <div class="form-triangle">
+            <input type="number" name="side-a-triangle" id="side-a-triangle" placeholder="Nilai Sisi A">
+            <input type="number" name="side-b-triangle" id="side-b-triangle" placeholder="Nilai Sisi B">
+            <input type="number" name="side-c-triangle" id="side-c-triangle" placeholder="Nilai Sisi C">
+          </div>
+          <div class="count">
+            <p id="show-triangle-perimeter-formula"></p>
+            <p id="show-triangle-perimeter-count"></p>
+            <p id="show-triangle-perimeter-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculatePerimeterTriangle()">
+          </div>
           <div class="button-reset">
             <input type="button" value="Reset" onclick="resetFormPerimeterTriangle()">
           </div>
+        </div>
         </div>
       </div>
     </section>
@@ -127,16 +131,18 @@
         <hr>
         <div class="card-form">
           <h1>Hitung Luas Jajar Genjang</h1>
-          <form onsubmit="calculateAreaParallelogram(event)" class="form-parallelogram" id="form-area-parallelogram">
-            <input type="number" name="parallelogram-base-value" id="parallelogram-base-value" placeholder="Nilai Alas" pattern="[0-9]+" required>
-            <input type="number" name="parallelogram-height" id="parallelogram-height" placeholder="Nilai Tinggi" pattern="[0-9]+" required>
-            <div class="count">
-              <p id="show-parallelogram-area-formula"></p>
-              <p id="show-parallelogram-area-count"></p>
-              <p id="show-parallelogram-area-result"></p>
-            </div>
-            <button type="submit" class="button-count">Hitung</button>
-          </form>
+          <div class="form-parallelogram">
+            <input type="number" name="parallelogram-base-value" id="parallelogram-base-value" placeholder="Nilai Alas">
+            <input type="number" name="parallelogram-height" id="parallelogram-height" placeholder="Nilai Tinggi">
+          </div>
+          <div class="count">
+            <p id="show-parallelogram-area-formula"></p>
+            <p id="show-parallelogram-area-count"></p>
+            <p id="show-parallelogram-area-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculateAreaParallelogram()">
+          </div>
           <div class="button-reset">
             <input type="button" value="Reset" onclick="resetFormAreaParallelogram()">
           </div>
@@ -162,16 +168,18 @@
         <hr>
         <div class="card-form">
           <h1>Hitung Keliling Jajar Genjang</h1>
-          <form onsubmit="calculatePerimeterParallelogram(event)" class="form-parallelogram" id="form-perimeter-parallelogram">
-            <input type="number" name="side-a-parallelogram" id="side-a-parallelogram" placeholder="Nilai Sisi A" pattern="[0-9]+" required>
-            <input type="number" name="side-b-parallelogram" id="side-b-parallelogram" placeholder="Nilai Sisi B" pattern="[0-9]+" required> 
-            <div class="count">
-              <p id="show-parallelogram-perimeter-formula"></p>
-              <p id="show-parallelogram-perimeter-count"></p>
-              <p id="show-parallelogram-perimeter-result"></p>
-            </div>
-            <button type="submit" class="button-count">Hitung</button>
-          </form>
+          <div class="form-parallelogram">
+            <input type="number" name="side-a-parallelogram" id="side-a-parallelogram" placeholder="Nilai Sisi A">
+            <input type="number" name="side-b-parallelogram" id="side-b-parallelogram" placeholder="Nilai Sisi B">
+          </div>
+          <div class="count">
+            <p id="show-parallelogram-perimeter-formula"></p>
+            <p id="show-parallelogram-perimeter-count"></p>
+            <p id="show-parallelogram-perimeter-result"></p>
+          </div>
+          <div class="button-count">
+            <input type="button" value="Hitung" onclick="calculatePerimeterParallelogram()">
+          </div>
           <div class="button-reset">
             <input type="button" value="Reset" onclick="resetFormPerimeterParallelogram()">
           </div>

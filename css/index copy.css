@@ -11,6 +11,16 @@ body {
 }
 
 /* CSS Title */
+
+/* header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
+  background: white;
+  min-height: 200px;
+} */
+
 .title {
   margin: 20px;
   text-align: center;
@@ -52,6 +62,12 @@ body {
 }
 
 /* CSS Main Content */
+/* main {
+  padding-top: 200px;
+  position: relative;
+} */
+
+
 .card {
   border: 1px cornflowerblue solid;
   box-shadow: 0px 14px 5px -7px rgba(0, 0, 0, 0.3);
@@ -93,8 +109,6 @@ hr {
 
 .count {
   margin-top: 10px;
-  display: block;
-  width: 100%;
 }
 
 .button-count {
@@ -102,6 +116,9 @@ hr {
   flex-direction: column;
   padding: 6px 8px;
   align-items: center;
+}
+
+.button-count>input {
   background-color: cornflowerblue;
   color: white;
   border: none;
